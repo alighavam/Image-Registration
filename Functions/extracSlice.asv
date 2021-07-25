@@ -1,0 +1,10 @@
+function slices = extracSlice(mask)
+
+[x,y,z] = ind2sub(size(mask),find(mask));
+imgIndx = mode(x);
+imgIndy = mode(y);
+imgIndz = mode(z);
+sz = size(mask);
+slices{1} = reshape(mask(imgIndx,:,:),sz(2),sz(3));
+slices{1} = reshape(mask(imgIndx,:,:),sz(2),sz(3));
+slices{1} = reshape(mask(imgIndx,:,:),sz(2),sz(3));
